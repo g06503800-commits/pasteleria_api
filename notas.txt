@@ -1,0 +1,18 @@
+
+API REST – SISTEMA DE GESTIÓN DE PASTELERÍA
+
+El proyecto consiste en el desarrollo de una API REST para un sistema de gestión de una pastelería, utilizando Node.js y Express como tecnologías principales para el desarrollo del servidor.
+La API permite administrar la información relacionada con los productos, categorías, clientes, pedidos y detalles de pedidos, mediante operaciones CRUD (crear, consultar, actualizar y eliminar).
+Para almacenar la información se utiliza una base de datos relacional MySQL, alojada en la plataforma en la nube Aiven. La conexión entre la API y la base de datos se realiza mediante el controlador MySQL2, utilizando un certificado SSL para garantizar una conexión cifrada y segura.
+Además, se utiliza Insomnia para realizar pruebas de los diferentes endpoints de la API y se contempla Render como plataforma para desplegar el servicio y permitir el acceso desde internet.
+
+Carpeta config
+Contiene el archivo dbConfig.js, encargado de establecer la conexión entre la API y la base de datos MySQL alojada en Aiven.
+Carpeta certs
+Contiene el archivo ca.pem, que corresponde al certificado de autoridad de certificación utilizado para validar la conexión SSL con Aiven.
+
+
+--Diseño de la base de datos--
+La base de datos se denomina pasteleria_db y está alojada en Aiven, utilizando MySQL como sistema gestor de base de datos.
+Está conformada por cinco tablas principales, diseñadas para organizar la información y establecer relaciones entre los diferentes elementos del sistema.
+
